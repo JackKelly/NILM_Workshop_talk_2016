@@ -1,0 +1,825 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Do disaggregated electricity bills really help people to save energy?</title>
+
+    <meta name="author" content="Jack Kelly">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="bower_components/reveal.js/css/theme/black.css" id="theme">
+    <link rel="stylesheet" href="css/jack.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+    
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section data-background="images/chimneys.jpg">
+
+          <div style="background-color: rgba(0, 0, 0, 0.5); padding: 10px">
+          <h2>Do disaggregated electricity bills really help people to save energy?</h2>
+          <p>
+            <small>
+              <a href="http://jack-kelly.com">Jack Kelly</a><br/>
+              jack.kelly@imperial.ac.uk<br/>
+            </small>
+          </p>
+          </div>
+        </section>
+
+        <section id="outline">
+          <h1>Outline</h1>
+          <ol>
+            <li class="fragment">Introduction to energy disaggregation</li>
+            <li class="fragment">Introduction to systematic reviews</li>
+            <li class="fragment">Methodology</li>
+            <li class="fragment">The studies</li>
+            <li class="fragment">Findings</li>
+            <li class="fragment">Gaps in our knowledge: Suggestions
+              for future research</li>
+            <li class="fragment">Conclusions</li>            
+          </ol>
+        </section>
+       
+        <section>
+          <h3>Energy Disaggregation</h3>
+        </section>
+
+        <!--
+        * What it is
+        * Also called NILM, NALM, NIALM.
+        * Evidence that it's a growing field - plot from Oli's blog;
+          screen grab from Bidgely press release about raising money;
+          lots of companies doing disag.
+        * Lots of use-cases but, in this talk, I will focus
+          exclusively on one use-case: providing people with itemised
+          energy bills in the hopes that this will help them to reduce their energy consumption.
+        * Why people think disag might help people save energy
+          - Lots of variation in energy use between homes with
+            identical appliances; hence behaviour must be important.
+          - "Information defecit" model.
+          - People often report that they want disag data.
+        * My background:
+          Almost at the end of my PhD.  Been working on the *computer
+          science* of disag for 5 years.
+          But the work I'm presenting today is not about the computer
+          science of disag; it's about what users do when given disag
+          data and, in particular, do they save energy.
+          At the start of my PhD I did an un-critical literature
+          review.  I found several papers claiming that disag data
+          helps people to save lots of energy.  So I thought all was
+          well.  Then, in November last year, in the pub one evening
+          at a conference, friend and colleague told me that "NILM IS
+          DEAD" (big read letters on screen).  By which he meant that
+        it simply doesn't help people save energy.  I thought he was
+        wrong so, when I returned to London, I dove deep into the
+        literature on the effectiveness of disaggregation to save
+        energy in order to prove my friend wrong.  What I found rather
+        worried me.  This presentation is the end-result of that 
+        systematic review of the literature.
+        -->
+       
+        <section>
+          <h3>Aggregate Energy Bill</h3>
+          <img src="images/top_5_energy_aggregate.png">
+        </section>
+        
+        <section>
+          <h3>Itemised Energy Bill</h3>
+          <img src="images/top_5_energy.png">
+        </section>
+
+        <section>
+          <img src="images/area_plot_agg.png" >
+        </section>
+
+        <section>
+          <img src="images/area_plot_fridge.png">
+        </section>
+
+        <section>
+          <img src="images/area_plot_htpc.png">
+        </section>
+
+        <section>
+          <img src="images/area_plot_others.png">
+        </section>
+
+        <section>
+          <img src="images/area_plot_dish_washer.png">
+        </section>
+
+        <section>
+          <img src="images/area_plot_washer_dryer.png">
+        </section>
+
+        <section>
+          <img src="images/area_plot_kettle.png">
+        </section>
+
+        <section>
+          <h3>The many names of 'energy disaggregation'</h3>
+          <ol>
+            <li class="fragment">NILM: <strong>N</strong>on-<strong>I</strong>ntrusive <strong>L</strong>oad <strong>M</strong>onitoring</li>
+            <li class="fragment">NALM: <strong>N</strong>on-intrusive <strong>A</strong>ppliance <strong>L</strong>oad <strong>M</strong>onitoring</li>
+            <li class="fragment">NIALM: <strong>N</strong>on-<strong>I</strong>ntrusive <strong>A</strong>ppliance <strong>L</strong>oad <strong>M</strong>onitoring</li>
+          </ol>
+        </section>
+
+        <section data-background="images/NILMWorkshop.jpg">
+          <div class="fragment" style="background-color: rgba(0, 0, 0, 0.5); padding: 10px;">
+            <h3>The Energy Disaggregation community</h3>
+            <img style="opacity: 0.8;" src="images/growth.png">
+          </div>      
+        </section>
+
+        <section data-background="images/bidgely.png">
+          <div class="fragment" style="background-color: rgba(0, 0, 0, 0.9); padding: 200px;">
+            <p>Bidgely raised $16.6 million in 2015</p>
+          </div>
+        </section>
+
+        
+        <section>
+          <h3>Why bother with disaggregation?</h3>
+        </section>
+
+        <section>          
+          <img src="images/spinning_disk_meter.jpg" height=650>
+        </section>
+        
+        <section>          
+          <img src="images/Smart_meter_transparent.png" height=650>
+        </section>
+
+        <section data-background="images/GB-from-space3.jpg">
+          <div class="fragment" style="background-color:rgba(0, 0, 0, 0.5); padding: 10px;">
+          <h2>GB Smart Meter Roll-out</h2>
+          <ul>
+            <li class="fragment">All homes to have a smart
+              meter by <mark>2020</mark>.</li>
+            <li class="fragment">These reports whole-house power demand
+            every <mark>10 seconds</mark> to home area network (HAN).</li>
+            <li class="fragment">DECC's business case assumes that smart
+              meters will drive <mark>savings of £4.6 billion</mark>
+              due to reduced energy consumption (across both
+              electricity and gas).</li>
+          </ul>
+          </div>
+        </section>
+        
+        <section>
+          <h2>Use-cases for energy disaggregation</h2>
+          <ul>
+            <li class="fragment"><em>Many</em> use-cases</li>
+            <li class="fragment">This talk is about <em>one</em> use-case:
+              <ul>
+                <li class="fragment">Can disaggregated energy feedback help people to
+                  reduce energy consumption more effectively than
+                  aggregate energy data alone?</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>How might disaggregated data reduce energy demand?</h2>          
+        </section>
+
+        <section>
+          <h2>1977: the Twin Rivers program</h2>
+          <img src="images/twin-rivers.png" height=500>
+          <p class="tiny">Socolow, <a href="http://dx.doi.org/10.1016/0378-7788(78)90003-8">The twin rivers program on energy
+          conservation in housing: Highlights and conclusions</a>,<br/> Energy
+          and Buildings, 1977</p>          
+        </section>
+
+        <section>
+          <p>2:1 range in energy consumption between identical houses</p>
+          <img src="images/histogram-gas.png" height=500>
+          <p class="tiny">Socolow, <a href="http://dx.doi.org/10.1016/0378-7788(78)90003-8">The twin rivers program on energy
+          conservation in housing: Highlights and conclusions</a>,<br/> Energy
+          and Buildings, 1977</p>
+        </section>
+
+        <section>
+          <h3>"Information deficit" <br/>and<br/> "rational resource managers"</h3>
+        </section>
+
+        <section>
+          <h3>People self-report that they <em>want</em> disaggregated
+            energy data</h3>
+        </section>
+
+        <section>
+          <h3>But <em>do</em> people save energy when given
+            disaggregated data?</h3>
+        </section>
+        
+        <section>
+          <h2>Why reduce energy consumption?</h2>
+        </section>
+
+        <section data-background="images/paris-leaders.jpg">
+          <h3 style="background-color:rgba(0, 0, 0, 0.5);">2015 Paris
+            agreement on Climate Change</h3>
+          <div class="fragment fade-in">
+            <div style="height: 100px;"></div>
+          <div style="height: 400px; display: table;">
+            <div style="display: table-cell; vertical-align: middle;">
+              <blockquote style="background-color:rgba(0, 0, 0, 0.5);">
+              "[Hold] the increase in the global average [surface] temperature
+              to <strong>well below 2 °C</strong> above pre-industrial levels and to <strong>pursue efforts
+                to limit the temperature increase to 1.5 °C</strong> above pre-industrial
+                  levels"
+              </blockquote>
+            </div>
+          </div>
+          <small style="background-color:rgba(0, 0, 0, 0.5); padding: 10px;">
+            United Nations Framework Convention on Climate
+            Change, COP
+            21, <a href="http://unfccc.int/paris_agreement/items/9485.php">Paris
+              Agreement</a>, 2015-12-11
+          </small>
+          <div style="height: 50px;"></div>
+          <p class="tiny" style="opacity: 0.8;">
+            Background image from <a href="http://www.theguardian.com/environment/2015/dec/13/paris-climate-deal-cop-diplomacy-developing-united-nations#img-1">The Guardian</a>/Francois Guillot/AFP/Getty Images
+          </p>
+          </div>
+        </section>
+
+        <section data-background="images/chimneys.jpg">
+          <img style="height: 700px; margin: 0px; opacity: 0.9;" class="fragment" src="images/emissions-for-1.5-degrees.png">
+          <p class="tiny" style="margin: 0px; background-color:rgba(0, 0, 0, 0.5);">
+            Background image from <a href="http://phys.org/news/2013-11-global-carbon-emissions-billion-tonnes.html">phys.org</a>/Gregory Heath/CSIRO
+          </p>
+        </section>
+
+        
+        <section data-background="images/chimneys.jpg">
+          <h3>Fossil-fuel emissions estimated to be compatible with 2
+            °C (RCP2.6)</h3>
+          <div class="fragment fade-in">
+            <img style="margin: 0px; opacity: 0.9;" src="images/emissions-for-2C.jpg">
+            <p class="tiny" style="background-color:rgba(0, 0, 0, 0.5);">
+              Gasser et al.,  <a href="http://dx.doi.org/10.1038/ncomms8958">Negative emissions
+                physically needed to keep global warming below 2 °C</a>,
+              Nature Communications, 2015</p>
+          </div>
+          <p class="tiny" style="margin: 0px; background-color:rgba(0, 0, 0, 0.5);">
+            Background image from <a href="http://phys.org/news/2013-11-global-carbon-emissions-billion-tonnes.html">phys.org</a>/Gregory Heath/CSIRO
+          </p>
+        </section>
+
+        <!--
+        <section data-background="images/antarctic.jpg">
+          <p>Future Antarctic contributions to global mean sea-level
+            (GMSL)</p>
+          <div class="fragment">
+            <div style="height: 500px; display: table; margin: auto;">
+              <div style="display: table-cell; vertical-align: middle;">
+                <p><img style="opacity: 0.8;"
+                        src="images/sealevel.png"></p>
+                <small>
+                  DeConto & Pollard, <a href="http://dx.doi.org/10.1038/nature17145">Contribution of Antarctica
+                    to past and future sea-level
+                    rise</a>, <em>Nature</em>, 2016
+                </small>
+              </div>
+            </div>
+            <div style="height: 50px;"></div>
+            <p class="tiny">
+              Background image
+              from <a href="http://svs.gsfc.nasa.gov/3854">NASA/Goddard
+                Space Flight Center Scientific Visualization
+                Studio</a>, 2011
+            </p>
+          </div>
+        </section>
+-->
+
+        <section data-background="images/antarctic.jpg">          
+          <p>Past and future changes in CO2 and mean temperature</p>
+          <img height=500 class="fragment" src="images/10000-years-CO2.png" style="border: 0; padding: 0; opacity: 0.9">
+          <p class="tiny" style="border: 0; padding: 0;">
+            Clark et al., <a href="http://dx.doi.org/10.1038/nclimate2923">Consequences of
+              twenty-first-century policy for multi-millennial climate and
+              sea-level change</a>,<br/> <em>Nature Climate Change</em>,
+            2016
+          </p>
+        </section>
+
+
+        <section data-background="images/antarctic.jpg">          
+          <p>Past and future changes in global mean sea level</p>
+          <img height=500 src="images/sea-level.jpg" style="border: 0; padding: 0; opacity: 0.9">
+          <p class="tiny" style="border: 0; padding: 0;">
+            Clark et al., <a href="http://dx.doi.org/10.1038/nclimate2923">Consequences of
+              twenty-first-century policy for multi-millennial climate and
+              sea-level change</a>,<br/> <em>Nature Climate Change</em>,
+            2016
+          </p>
+        </section>
+
+        
+
+        
+        <section>
+          <h1>My Work</h1>
+          <p class="segment">The Computer Science of disaggregation</p>
+        </section>
+
+        <section id="rnns-for-nilm">
+          <h1>Recurrent Neural Nets</h1>
+          <p class="placeholder"></p>
+          <span class="fragment"></span>
+          <span class="fragment"></span>
+          <span class="fragment"></span>
+          <span class="fragment"></span>          
+        </section>
+
+        <section>
+          <h1 style="color: red;">"NILM<br/>IS<br/>DEAD"</h1>
+        </section>
+
+        <section data-background="images/CTA-final.jpg">
+          <h1 style="color: black;">Systematic reviews</h1>
+          <ul>
+            <li class="fragment" style="color: black;">Common in
+              medicine, social sciences etc.</li>
+            <li class="fragment" style="color: black;">Aim to
+              collect <em>all</em> papers matching a defined
+              search criteria</li>
+            <li class="fragment" style="color: black;">Quantitative
+              summary of each paper and biases</li>
+            <li class="fragment" style="color: black;">Quantitative
+              synthesis of all results</li>
+            <li class="fragment" style="color: black;">May include a "meta-analysis"</li>            
+            <li class="fragment" style="color: black;">Distinct from
+            "narrative" reviews</li>            
+          </ul>
+          <div style="height: 200px;"></div>
+          <p class="tiny">Background image from <a href="https://ita.ucsf.edu/sites/ita.ucsf.edu/files/insert/images/CTA-final.jpg">UCSF</a></p>
+        </section>
+
+        <section>
+          <h1>Methodology</h1>
+        </section>
+        
+        <section>
+          <h2>Research questions</h2>
+          <ol>
+            <li class="fragment">Can disaggregated energy data help an
+              already-motivated sub-group of the general population
+              (‘energy enthusiasts’) to save energy?</li>
+            <li class="fragment">How much energy would the general
+              population save if given disaggregated data?</li>
+            <li class="fragment">Is fine-grained disaggregation
+              required?</li>
+            <li class="fragment">For the general population, does
+            disaggregated energy feedback enable greater savings than
+              aggregate data?</li>            
+          </ol>
+        </section>
+
+        <section>
+          <h2>Literature search</h2>
+          <ol>
+            <li class="fragment">Three search engines: Google Scholar,
+              the ACM Digital Library and IEEE Xplore</li>
+            <li class="fragment">Search terms:
+              <ul>
+                <li class="fragment">‘disaggregated AND 
+                  [energy|electricity] AND feedback’</li>
+                <li class="fragment">‘N[I|A|IA]LM AND
+                  feedback’</li>
+              </ul>
+            </li>
+            <li class="fragment">Searched papers' bibliographies</li>
+            <li class="fragment">Send draft literature review to
+            authors for comments</li>            
+          </ol>
+        </section>
+
+        <section>
+          <h1>The studies</h1>
+          <p>12 groups of studies identified</p>
+        </section>
+
+        <section>
+          <img src="images/table.png" height=730 style="margin: 0;">
+        </section>
+
+        <section>
+          <h1>Findings</h1>
+          <ul>
+            <li class="fragment">Mean energy reduction = 4%</li>
+            <li class="fragment">Weighted by number of
+              participants</li>
+            <li class="fragment">Full meta-analysis probably not possible</li>
+          </ul>          
+        </section>
+
+        <section>
+          <h1>Biases</h1>
+        </section>
+
+        <section>
+          <h1>Opt-in bias</h1>
+          <ul>
+            <li class="fragment">All 12 studies suffer from 'opt-in'
+              bias</li>
+            <li class="fragment">Subjects self-selected to some extent</li>
+            <li class="fragment">Subjects probably more interested in energy
+              than the average person</li>
+            <li class="fragment">Very likely to be a strong positive bias</li>            
+          </ul>          
+        </section>
+
+        <section>
+          <h1>The Hawthorne Effect</h1>
+          <ul>
+            <li class="fragment">8 studies did not control for Hawthorne</li>
+            <li class="fragment">Hawthorne effect is illustrated by
+              <a href="http://dx.doi.org/10.1073/pnas.1301687110">Schwartz et al. 2013</a>:
+              <ul>
+                <li class="fragment">Randomised controlled trial</li>
+                <li class="fragment">6,350 participants split into 2
+                  groups: control & treatment</li>               
+                <li class="fragment">Treatment received weekly
+                  postcard saying: <em>"You have been selected to be
+                    part of a one-month study of how much electricity you
+                    use in your home... No action is needed on your
+                    part. We will send you a weekly reminder postcard
+                    about the study..."</em></li>
+                <li class="fragment">Treatment group reduced energy consumption by 2.7%!</li>                
+              </ul>
+              <li class="fragment">Failure to control for Hawthorne very likely to be
+                strong positive bias</li>
+              </li>
+          </ul>          
+        </section>
+
+        <section>
+          <h1>Other biases</h1>
+          <ul>
+            <li class="fragment">6 studies used attention-grabbing
+              displays</li>
+            <li class="fragment">Home-visits</li>
+            <li class="fragment">10 studies were short (4 months or
+              less)</li>
+            <li class="fragment">Cherry-picking statistical analyses
+              and comparison periods?</li>
+            <li class="fragment">8 studies used sub-metered data,
+              hence avoiding mistrust from participants</li>
+            <li class="fragment">Publication bias?</li>            
+          </ul>
+        </section>
+
+        <section>
+          <h3>Can disaggregated electricity feedback enable "energy
+            enthusiasts" to save energy?</h3>
+          <ul>
+            <li class="fragment">Very likely.  For example...</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Home Energy Analytics (HEA) studies</h3>
+          <img src="images/HEA.png">
+          <ul>
+            <li class="fragment">1,623 users</li>
+            <li class="fragment">Up to 44 months</li>
+            <li class="fragment">Average reduction of 6.1%</li>
+            <li class="fragment">Top quartile (310
+              "super-enthusiasts") reduced by 14.5%</li>            
+          </ul>              
+        </section>
+
+        <section>
+          <h3>2014 PG&E study</h3>
+          <ul>
+            <li class="fragment">1,685 users: half got IHD; half got Bidgely</li>
+            <li class="fragment">3 months</li>
+            <li class="fragment">No significant reduction across all
+            1,685 users</li>
+            <li class="fragment">But users who selected a time-of-use
+              tariff saved 7.7% (142 IHD; 136 Bidgely)</li>
+          </ul>              
+        </section>
+
+        <section>
+          <h3>How much energy would the <em>whole</em> population
+            save?</h3>
+          <ul>
+            <li class="fragment">No "perfect" correction for opt-in
+              bias</li>
+            <li class="fragment">Consider study in Sweden (<a href="http://dx.doi.org/10.1016/j.apenergy.2011.12.067">Vassileva
+                et al. 2012</a>):
+              <ul>
+                <li class="fragment">2,000 households given access to
+                  website analysing their aggregate energy demand</li>
+                <li class="fragment">Only 32% accessed the
+                  website.  They saved 15%.</li>
+                <li class="fragment">Those who did not access website
+                  did not reduce energy.</li>
+                <li class="fragment">Average saving = 32% x 15% = 5%</li>                               
+              </ul>
+            </li>            
+          </ul>          
+        </section>
+
+        <section>
+          <h3>How much energy would the <em>whole</em> population
+            save?</h3>
+          <ul>
+            <li class="fragment">Average opt-in rate = 16%</li>
+            <li class="fragment">Average saving across population =
+              16% x 4% = 0.6%</li>                        
+          </ul>          
+        </section>
+
+        <section>
+          <h3>Is "fine-grained" disaggregation necessary?</h3>
+          <img src="images/area_plot_kettle.png">
+        </section>
+
+        <section>
+          <h3>Is "fine-grained" disaggregation necessary?</h3>          
+          <p>Home Energy Analytics (HEA) studies</p>
+          <img src="images/HEA.png" height=300>
+          <ul>
+            <li>Average reduction of 6.1%</li>
+            <li class="fragment">Coarse-grained disaggregation may be
+              sufficient</li>
+            <li class="fragment">But no studies directly compared
+              fine-grained against coarse-grained.</li>            
+          </ul>
+        </section>
+
+        <section>
+          <h3>Aggregate versus disaggregated feedback</h3>          
+          <ul>
+            <li class="fragment">4 of the 12 studies directly
+              compared disaggregated against aggregate feedback
+              <ul>
+                <li class="fragment">3 studies found aggregate to
+                  be <em>more</em> effective</li>
+                <li class="fragment">1 study found aggregate to
+                  be <em>equally</em> effective</li>
+                <li class="fragment">2 field trials & 2 lab experiments</li>            
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>The 2 field trials...</h1>
+        </section>
+
+        <section>
+          <h1>Sokoloski 2015</h1>
+
+          <ul>
+            <li class="fragment">Randomised controlled trial</li>
+            <li class="fragment">70 households recruited in California
+              <ul>
+                <li class="fragment">Disag group (n=12)</li>
+                <li class="fragment">IHD group (n=34)</li>
+                <li class="fragment">No-contact control (n=24)</li>                                
+              </ul>
+            </li>
+            <li class="fragment">3 weeks</li>
+            <li class="fragment">Becky Sokoloski, <a href="http://hdl.handle.net/10211.3/141932/">Disaggregated
+            Electricity Consumption: Using Appliance-Specific
+            Feedback to Promote Energy Conservation</a>, M.A. thesis in Psychology, California State
+            University San Marcos, 2015</li>
+          </ul>
+        </section>
+
+        <section>
+          <img src="images/sokoloski-bidgely-1.png">
+        </section>
+
+        <section>
+          <img src="images/sokoloski-bidgely-2.png">
+        </section>
+
+        <section>
+          <img src="images/sokoloski-IHD.png" height=700>
+        </section>
+
+        <section>
+          <h3>Sokoloski's results</h3>
+          <img src="images/sokoloski-results.png">
+        </section>
+
+        <section>
+          <h3>Sokoloski's results</h3>
+          <img src="images/sokoloski-results-2.png">
+        </section>
+
+        <section>
+          <h3>Sokoloski's results</h3>
+          <p>Energy reductions:</p>
+          <ul>
+            <li>IHD: 8.1% (statistically significant)</li>
+            <li>Disaggregation: 0.5%</li>
+            <li>Control: -2.5%</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Sokoloski's results</h3>
+          <p>Findings from surveys:</p>
+          <ul>
+            <li class="fragment">Follow-up survey revealed that the
+              disag group were <em>not</em> significantly more likely
+              to be willing to <mark>replace large, inefficient appliances</mark>
+              compared to controls or IHD group.</li>
+            <li class="fragment">Neither controls nor the disag group
+              significantly increased their <mark>perception of control</mark>
+              (initial survey versus follow-up).</li>
+            <li class="fragment">IHD group <em>did</em> increase
+            their perception of control.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Sokoloski's results</h3>
+          <p>Findings from surveys:</p>
+          <ul>
+            <li class="fragment">Users viewed their devices:
+              <ul>
+                <li>0.86 times per day for disag users</li>
+                <li>8.16 times per day for IHD users</li>
+              </ul>
+            </li>
+
+            <li class="fragment">Returning devices:
+              <ul>
+                <li>2 of 7 (29%) wanted to return disag device</li>
+                <li>2 of 30 (7%) wanted to return IHD</li>
+              </ul>
+            </li>
+            
+          </ul>
+        </section>
+
+        <section>
+          <h3>PG&E 2014 trial</h3>
+          <ul>
+            <li class="fragment">1,685 PG&E customers</li>
+            <li class="fragment">1,001 from SmartRate & 584 from
+              time-of-use users</li>
+            <li class="fragment">additional no-contact controls</li>
+            <li class="fragment">Half got IHD & half got Bidgely</li>             
+            <li class="fragment">3 months</li>
+            <li class="fragment">Users choose intervention</li>
+            <li class="fragment">Did not tease apart consumption of
+              IHD vs Bidgely</li>            
+            <li class="fragment">Churchwell et
+            al., <a href="http://www.myaztech.ca/wp-content/uploads/PGE-HAN_Impacts_and_Savings_Report_FINAL.pdf">HAN
+            Phase 3 Impact and Process Evaluation Report</a>,
+            technical report by Nexant, 2014</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>PG&E 2014 trial results</h3>
+          <ul>
+            <li class="fragment">No significant energy reduction
+              across all 1,001 SmartRate users or 208 EV TOU users</li>
+            <li class="fragment">7.7% energy reduction for time-of-use users
+              (142 IHD & 136 Bidgely users)</li>
+            <li class="fragment">IHD users significantly more likely
+              to report taking actions to reduce electricity usage
+              and to use their device to deduce power demand of
+              individual appliances(!)</li>
+            <li class="fragment">Most common complaints from Bidgely
+            users was about the disag feature.  Several users did not
+            trust the disag data; or were unsure whether users should
+            assist the algorithm by turning loads on or off; or
+            thought categories were too few or too broad; or didn't
+              like that they couldn't add new disag categories.</li>
+            <li class="fragment">IHD more successful in communicating
+              power demand right now</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>PG&E 2014 trial results</h3>
+          <p>Frequency of viewing devices</p>
+          <img src="images/churchwell-viewing.png">
+        </section>
+
+        <section>
+          <h3>PG&E 2014 trial results</h3>
+          <p>Percentage of customers saying they saved energy</p>
+          <img src="images/churchwell-energy-saving.png">
+        </section>
+
+        <section>
+          <h3>PG&E 2014 trial results</h3>
+          <p>Reported actions taken in response to feedback</p>
+          <img src="images/churchwell-actions.png">
+        </section>
+                
+        <section>
+          <p>Bidgely have redesigned their website since these studies</p>
+        </section>
+
+        <section>
+          <h3>Suggestions for future studies</h3>
+          <ul>
+            <li class="fragment">Compare aggregate versus disagg
+              (both on an IHD)</li>
+            <li class="fragment">Compare 2 groups:<ol>
+                <li>Aggregate on an IHD</li>
+                <li>Aggregate (on an IHD) + disagg (on a website)</li>
+              </ol>
+              </li>
+            <li class="fragment">Compare fine-grained disag versus
+            coarse-grained disag</li>                        
+          </ul>
+        </section>
+
+        <section>
+          <h3>Conclusions</h3>
+          <ul>
+            <li class="fragment">There are <em>many</em> uses for
+              disag data! This talk just considered one use!</li>
+            <li class="fragment">Available evidence suggests that
+              aggregate feedback is <em>at least as effective</em> as
+              disag feedback</li>
+            <li class="fragment">Disag feedback might drive savings
+              of 0.6% - 4% in general population</li>
+            <li class="fragment">Disag feedback might drive larger savings
+              in "energy enthusiast" populations</li>
+            <li class="fragment">Fine-grained disag may not be
+              necessary</li>
+            <li class="fragment">But! Lots of gaps in our knowledge.
+              Cannot robustly falsify any hypotheses yet.</li>            
+          </ul>
+        </section>
+
+        <section>
+          <h3>Conclusions</h3>
+          <p>Users might become more interested in disag feedback if:</p>
+          <ul>
+            <li class="fragment">Energy prices increase</li>
+            <li class="fragment">Concern about climate change
+              deepens</li>
+            <li class="fragment">Disag accuracy increases or if
+              designers communicate uncertain estimates</li>
+            <li class="fragment">Lots of ideas in the literature
+              about how to improve disag feedback.  e.g. disag
+              by <em>behaviour</em>; or display feedback near
+              appliances; or provide better recommendations etc.</li>            
+          </ul>
+        </section>
+        
+      </div>
+
+    <!-- REVEAL -->
+    <script src="bower_components/reveal.js/lib/js/head.min.js"></script>
+    <script src="bower_components/reveal.js/js/reveal.js"></script>
+
+    <!-- D3 -->
+    <script src="bower_components/d3/d3.js"></script>
+
+    <!-- REVEAL TO D3 -->
+    <script src="js/reveal-to-d3-config.js"></script>
+    <script src="js/reveal-to-d3.js"></script>
+    <script src="js/d3-common.js"></script>    
+    <script src="js/d3-plot-power-data.js"></script>
+    <script src="js/d3-plot-neural-nets.js"></script>    
+    
+    <!-- REVEAL INIT -->
+    <script src="js/reveal-init.js"></script>
+    
+  </body>
+</html>
