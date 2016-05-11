@@ -1,17 +1,22 @@
-This repository holds the source code for my presentation on
-["Do disaggregated electricity bills really help people to save energy?"](http://www3.imperial.ac.uk/newsandeventspggrp/imperialcollege/administration/energyfutureslab/eventssummary/event_5-4-2016-9-1-7)
-presented as part of the Imperial College Energy Futures Lab seminars.
+This repository holds the source code for my slides on "Does
+disaggregated electricity feedback reduce domestic electricity
+consumption? A systematic review of the literature" presented as part
+of the
+[3rd International NILM Workshop](http://nilmworkshop.org/2016/index.html)
+in Vancouver, Canada on the 14th May 2016.
 
 If you just want to view this presentation, just point your browser to
-[http://jackkelly.github.io/EFL_talk](http://jackkelly.github.io/EFL_talk)
+[http://jackkelly.github.io/NILM_Workshop_talk_2016](http://jackkelly.github.io/NILM_Workshop_talk_2016)
 
 You do not need to clone this repository just to view the
 presentation.
 
 This presentation is based on my paper:
-"[Does disaggregated electricity feedback reduce domestic electricity consumption? A systematic review of the literature](http://arxiv.org/abs/1605.00962)",
-In *3rd International NILM Workshop*, Vancouver, Canada, 14-15 May
-2016.
+
+* Jack Kelly & William Knottenbelt. "**Does disaggregated electricity
+feedback reduce domestic electricity consumption? A systematic review
+of the literature**", In *3rd International NILM Workshop*, Vancouver,
+Canada, 14-15 May 2016. arXiv:[1605.00962](http://arxiv.org/abs/1605.00962)
 
 ---
 
