@@ -3,7 +3,7 @@ disaggregated electricity feedback reduce domestic electricity
 consumption? A systematic review of the literature" presented as part
 of the
 [3rd International NILM Workshop](http://nilmworkshop.org/2016/index.html)
-in Vancouver, Canada on the 14th May 2016.
+in Vancouver, Canada on Saturday 14th May 2016.
 
 If you just want to view this presentation, just point your browser to
 [http://jackkelly.github.io/NILM_Workshop_talk_2016](http://jackkelly.github.io/NILM_Workshop_talk_2016)
@@ -18,10 +18,12 @@ feedback reduce domestic electricity consumption? A systematic review
 of the literature**", In *3rd International NILM Workshop*, Vancouver,
 Canada, 14-15 May 2016. arXiv:[1605.00962](http://arxiv.org/abs/1605.00962)
 
----
+# Run presentation on your local machine
 
 If you want to run this presentation locally then here is one way to
 do that (on Ubuntu):
+
+First clone the git repository. Then run:
 
 ```
 sudo apt-get install nodejs-legacy npm
