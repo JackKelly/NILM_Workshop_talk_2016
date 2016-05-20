@@ -22,7 +22,7 @@
       var link = document.createElement( 'link' );
       link.rel = 'stylesheet';
       link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'bower_components/reveal.js/css/print/pdf.css' : 'bower_components/reveal.js/css/print/paper.css';
       document.getElementsByTagName( 'head' )[0].appendChild( link );
     </script>
 
@@ -50,6 +50,8 @@
             <small>
               <a href="http://jack-kelly.com">Jack Kelly</a><br/>
               jack.kelly@imperial.ac.uk<br/>
+              <br/>
+              (<em>Press right-arrow on your keyboard to start</em>)              
             </small>
           </p>
           </div>
@@ -180,6 +182,7 @@
         </section>
 -->
 
+<!--
         <section>
         </section>
 
@@ -198,6 +201,7 @@
         <section>
           <p style="color: red; font-size: 4em;">‘NILM is dead!’</p>
         </section> 
+-->
 <!--
         <section>
           <img src="images/davis-screenshot.png">
@@ -581,123 +585,14 @@
               appliances; or provide better recommendations etc.</li>            
           </ul>
         </section>
-<!--
+
         <section>
           <p>This presentation is based on my paper:<br/>
 "<a href="http://arxiv.org/abs/1605.00962">Does disaggregated
 electricity feedback reduce domestic electricity consumption? A
 systematic review of the literature</a>",<br/> In <em>3rd International NILM
 Workshop</em>, Vancouver, Canada, 14-15 May 2016.</p>
-        </section>-->
-
-<section>
-</section>
-
-        
-        <section>
-          <h1>Appendix</h1>
-        </section>
-
-        <section>
-          <h3>PG&E 2014 trial results</h3>
-          <p>Reported actions taken in response to feedback</p>
-          <img src="images/churchwell-actions.png">
-        </section>
-        
-<!--
-        
-        <section>
-          <h2>Why reduce energy consumption?</h2>
-        </section>
-
-        <section data-background="images/paris-leaders.jpg">
-          <h3 style="background-color:rgba(0, 0, 0, 0.5);">2015 Paris
-            agreement on Climate Change</h3>
-          <div class="fragment fade-in">
-            <div style="height: 100px;"></div>
-          <div style="height: 400px; display: table;">
-            <div style="display: table-cell; vertical-align: middle;">
-              <blockquote style="background-color:rgba(0, 0, 0, 0.5);">
-              "[Hold] the increase in the global average [surface] temperature
-              to <strong>well below 2 °C</strong> above pre-industrial levels and to <strong>pursue efforts
-                to limit the temperature increase to 1.5 °C</strong> above pre-industrial
-                  levels"
-              </blockquote>
-            </div>
-          </div>
-          <small style="background-color:rgba(0, 0, 0, 0.5); padding: 10px;">
-            United Nations Framework Convention on Climate
-            Change, COP
-            21, <a href="http://unfccc.int/paris_agreement/items/9485.php">Paris
-              Agreement</a>, 2015-12-11
-          </small>
-          <div style="height: 50px;"></div>
-          <p class="tiny" style="opacity: 0.8;">
-            Background image from <a href="http://www.theguardian.com/environment/2015/dec/13/paris-climate-deal-cop-diplomacy-developing-united-nations#img-1">The Guardian</a>/Francois Guillot/AFP/Getty Images
-          </p>
-          </div>
-        </section>
-
-        <section data-background="images/chimneys.jpg">
-          <img style="height: 700px; margin: 0px; opacity: 0.9;" class="fragment" src="images/emissions-for-1.5-degrees.png">
-          <p class="tiny" style="margin: 0px; background-color:rgba(0, 0, 0, 0.5);">
-            Background image from <a href="http://phys.org/news/2013-11-global-carbon-emissions-billion-tonnes.html">phys.org</a>/Gregory Heath/CSIRO
-          </p>
-        </section>
-
-
-        <section data-background="images/antarctic.jpg">
-          <p>Future Antarctic contributions to global mean sea-level
-            (GMSL)</p>
-          <div class="fragment">
-            <div style="height: 500px; display: table; margin: auto;">
-              <div style="display: table-cell; vertical-align: middle;">
-                <p><img style="opacity: 0.8;"
-                        src="images/sealevel.png"></p>
-                <small>
-                  DeConto & Pollard, <a href="http://dx.doi.org/10.1038/nature17145">Contribution of Antarctica
-                    to past and future sea-level
-                    rise</a>, <em>Nature</em>, 2016
-                </small>
-              </div>
-            </div>
-            <div style="height: 50px;"></div>
-            <p class="tiny">
-              Background image
-              from <a href="http://svs.gsfc.nasa.gov/3854">NASA/Goddard
-                Space Flight Center Scientific Visualization
-                Studio</a>, 2011
-            </p>
-          </div>
-        </section>
-
-        <section data-background="images/antarctic.jpg">          
-          <p>Past and future changes in CO2 and mean temperature</p>
-          <img height=500 class="fragment" src="images/10000-years-CO2.png" style="border: 0; padding: 0; opacity: 0.9">
-          <p class="tiny" style="border: 0; padding: 0;">
-            Clark et al., <a href="http://dx.doi.org/10.1038/nclimate2923">Consequences of
-              twenty-first-century policy for multi-millennial climate and
-              sea-level change</a>,<br/> <em>Nature Climate Change</em>,
-            2016
-          </p>
-        </section>
-        
-        
-        <section>
-          <h1>My Work</h1>
-          <p class="segment">The Computer Science of disaggregation</p>
-        </section>
-
-        <section id="rnns-for-nilm">
-          <h1>Recurrent Neural Nets</h1>
-          <p class="placeholder"></p>
-          <span class="fragment"></span>
-          <span class="fragment"></span>
-          <span class="fragment"></span>
-          <span class="fragment"></span>          
-        </section>
--->
-        
+        </section>        
         
       </div>
 
@@ -721,6 +616,27 @@ Workshop</em>, Vancouver, Canada, 14-15 May 2016.</p>
     
     <!-- REVEAL INIT -->
     <script src="js/reveal-init.js"></script>
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-29040208-5', 'auto');
+      ga('send', 'pageview');
+
+      // From https://github.com/hakimel/reveal.js/issues/211#issuecomment-60726240
+      Reveal.addEventListener("slidechanged",function(event){
+
+        ga('send', 'pageview', {
+          'page': event.indexh,
+          'title': document.title + ' : Slide ' + event.indexh
+        });
+
+      });
+    </script>
     
   </body>
 </html>
